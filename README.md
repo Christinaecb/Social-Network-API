@@ -27,7 +27,8 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ## Walkthrough Videos
 
-[User Routes](https://user-images.githubusercontent.com/119627874/236024554-c0f6070b-cb8f-4fb1-a4a9-0f79e5648ac2.webm)
+[User Routes.webm](https://user-images.githubusercontent.com/119627874/236025055-01d28d44-25ba-42bd-9df4-206ac7f3a331.webm)
+
 
 [Friend Routes]()  
 [Thought Routes]()  
