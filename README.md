@@ -27,6 +27,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ## Walkthrough Videos
 User Routes
+
 [User Routes.webm](https://user-images.githubusercontent.com/119627874/236025055-01d28d44-25ba-42bd-9df4-206ac7f3a331.webm)
 
 
