@@ -59,7 +59,6 @@ This repo is not to be deployed, if you wanted to, you could by doing the follow
 3. Run the following at the command line
 ```
     - npm i
-   
 ```
 4. Start the server
 ```
