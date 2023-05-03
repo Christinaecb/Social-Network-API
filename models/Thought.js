@@ -9,18 +9,19 @@ const reactionSchema = new Schema(
         reactionBody: {
             type: String,
             required: true,
+            trim: true,
+			minlength: 1,
             maxlength: 280
         },
         createdAt: {
             type: Date,
             default: Date.now,
-            get: function() {
-                return new Date(this._id.getTimestamp()).toLocaleString();
-            }
+            get: (createdAtVal) => dateFormat(createdAtVal),
         },
         username: {
             type: String,
             required: true,
+            trim: true,
         },
     },
     {
@@ -31,40 +32,39 @@ const reactionSchema = new Schema(
     }
 )
 
-const thoughtSchema = new Schema(
-    {
-        thoughtText: {
-            type: String,
-            required: true,
-            minlength: 1,
-            maxlength: 280
-        },
-        createdAt: {
-            type: Date,
-            default: Date.now,
-            get: function() {
-                return new Date(this._id.getTimestamp()).toLocaleString();
-            }
-        },
-        username: {
-            type: String,
-            required: true,
-        },
-        reactions: [reactionSchema]
-    },
-    {
-    toJSON: {
-        getters: true
-      },
-      id: false
-    }
-)
+const ThoughtSchema = new Schema(
+	{
+		username: {
+			type: String,
+			required: true,
+			trim: true,
+		},
+		thoughtText: {
+			type: String,
+			required: true,
+			minlength: 1,
+			maxlength: 280,
+		},
+		createdAt: {
+			type: Date,
+			default: Date.now,
+			get: (createdAtVal) => dateFormat(createdAtVal),
+		},
+		reactions: [ReactionSchema],
+	},
+	{
+		toJSON: {
+			virtuals: true,
+			getters: true,
+		},
+		id: false,
+	}
+);
 
+ThoughtSchema.virtual("reactionCount").get(function () {
+	return this.reactions.length;
+});
 
-thoughtSchema.virtual('reactionCount').get(function() {
-    return this.reactions.length;
-})
+const Thought = model("Thought", ThoughtSchema);
 
-const Thought = model('Thought', thoughtSchema);
-
-module.exports = Thought
+module.exports = Thought;
