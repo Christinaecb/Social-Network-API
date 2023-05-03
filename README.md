@@ -30,8 +30,11 @@ User Routes
 
 [User Routes.webm](https://user-images.githubusercontent.com/119627874/236025055-01d28d44-25ba-42bd-9df4-206ac7f3a331.webm)
 
+Friend Routes
 
-[Friend Routes]()  
+[Friend Routes.webm](https://user-images.githubusercontent.com/119627874/236027431-b57c9005-2a13-4e85-b8ff-6e6281f509a9.webm)
+
+ 
 [Thought Routes]()  
 [Reaction Routes]()  
 
