@@ -34,8 +34,11 @@ Friend Routes
 
 [Friend Routes.webm](https://user-images.githubusercontent.com/119627874/236027431-b57c9005-2a13-4e85-b8ff-6e6281f509a9.webm)
 
+ Thought Routes
  
-[Thought Routes]()  
+ [Thought Routes.webm](https://user-images.githubusercontent.com/119627874/236045777-a1789cbd-6cd4-4755-98fc-13fb0c5811cd.webm)
+
+ 
 [Reaction Routes]()  
 
 ## Installation:
