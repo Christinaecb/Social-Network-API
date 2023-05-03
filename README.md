@@ -54,7 +54,7 @@ Friend Routes
 ## Installation:
 
 This repo is not to be deployed, if you wanted to, you could by doing the following:  
-1. Download the repo files from the link below
+1. Download the repo
 2. You must have mongoDB installed
 3. Run the following at the command line
 ```
